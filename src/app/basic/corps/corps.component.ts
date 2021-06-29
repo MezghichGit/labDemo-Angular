@@ -9,6 +9,7 @@ import { UserService } from 'src/app/services/user.service';
 export class CorpsComponent implements OnInit {
 
   private users :any
+
   //injection de dépendences : par exemple le service, cad il va créer le service
   constructor(private service : UserService) { }
 
@@ -22,6 +23,13 @@ export class CorpsComponent implements OnInit {
       }
     );
 
+  }
+
+
+  //
+  infoFormation()
+  {
+    alert("Formation Angular avec NodeJS");
   }
 
 }
