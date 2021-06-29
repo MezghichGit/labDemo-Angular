@@ -8,7 +8,8 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class CorpsComponent implements OnInit {
 
-  private users :any
+  users :any;
+  nbUsers = 20;
 
   valInitiale:string="Bonjour";
 

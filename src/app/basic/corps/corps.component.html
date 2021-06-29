@@ -7,6 +7,12 @@ Taper v2 : <input type="text" [(ngModel)]="v2">
 
 <br/>
 
+<h2 align="center">Liste des users</h2>
+<h3 *ngIf="!nbUsers && nbUsers!=0">Aucun utilisateur!</h3>
+<ul>
+  <li *ngFor="let u of users"> {{u.name}} - {{u.address.city}}</li>
+</ul>
+
 <button (click)="som()" class="btn btn-primary">Somme</button>
 Le résultat = {{somme}}
 

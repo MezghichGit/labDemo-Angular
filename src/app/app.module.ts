@@ -8,6 +8,8 @@ import { CorpsComponent } from './basic/corps/corps.component';
 import { FooterComponent } from './basic/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { AddIsikaPipe } from './pipes/add-isika.pipe';
+import { AddUserComponent } from './basic/add-user/add-user.component';
+import { ListUsersComponent } from './basic/list-users/list-users.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { AddIsikaPipe } from './pipes/add-isika.pipe';
     HeaderComponent,
     CorpsComponent,
     FooterComponent,
-    AddIsikaPipe
+    AddIsikaPipe,
+    AddUserComponent,
+    ListUsersComponent
   ],
   imports: [
     BrowserModule,
