@@ -1,5 +1,8 @@
 
 <h1 align="center">{{titre}}</h1>
-<img [src]="url"/>
+<img [src]="url" [hidden]="!isVisible"/>
+
+<button (click)="changerVisibilite()">Afficher/Cacher</button>
+<br/>
 
 
