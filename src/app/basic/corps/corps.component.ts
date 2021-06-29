@@ -10,6 +10,12 @@ export class CorpsComponent implements OnInit {
 
   private users :any
 
+  valInitiale:string="Bonjour";
+
+  v1 :number = 0;
+  v2 : number = 0;
+  somme :number =0;
+
   //injection de dépendences : par exemple le service, cad il va créer le service
   constructor(private service : UserService) { }
 
@@ -25,11 +31,17 @@ export class CorpsComponent implements OnInit {
 
   }
 
-
+  som(){
+    this.somme = Number(this.v1) + Number(this.v2);
+  }
   //
   infoFormation()
   {
     alert("Formation Angular avec NodeJS");
   }
 
+  add()
+  {
+    alert("Ok")
+  }
 }

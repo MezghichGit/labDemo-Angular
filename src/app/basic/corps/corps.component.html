@@ -1,1 +1,24 @@
-<button (click)="infoFormation()">Cliquer ici</button>
+<button (click)="infoFormation()" class="btn btn-primary">Cliquer ici</button>
+<br/>
+
+Taper v1 : <input type="text" [(ngModel)]="v1">
+<br/>
+Taper v2 : <input type="text" [(ngModel)]="v2">
+
+<br/>
+
+<button (click)="som()" class="btn btn-primary">Somme</button>
+Le résultat = {{somme}}
+
+
+
+
+
+<h3>Formulaire d'inscription</h3>
+<form ngform (click)="add()">
+Nom : <input type="text" ngModel name="nom"/>
+<br/>
+Prénom : <input type="text" ngModel name="prenom"/>
+<br/>
+<input type="submit" value="S'inscrire"/>
+</form>
