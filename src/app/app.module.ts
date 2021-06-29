@@ -7,13 +7,15 @@ import { HeaderComponent } from './basic/header/header.component';
 import { CorpsComponent } from './basic/corps/corps.component';
 import { FooterComponent } from './basic/footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { AddIsikaPipe } from './pipes/add-isika.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CorpsComponent,
-    FooterComponent
+    FooterComponent,
+    AddIsikaPipe
   ],
   imports: [
     BrowserModule,

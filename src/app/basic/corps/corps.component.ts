@@ -12,10 +12,13 @@ export class CorpsComponent implements OnInit {
 
   valInitiale:string="Bonjour";
 
-  v1 :number = 0;
-  v2 : number = 0;
+  v1 :number = -1;
+  v2 : number = -1;
   somme :number =0;
 
+  section:string = "les pipes";
+
+  section2:string = "LES PIPES PERSO";
   //injection de dépendences : par exemple le service, cad il va créer le service
   constructor(private service : UserService) { }
 
